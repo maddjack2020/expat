@@ -1,0 +1,547 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: expat
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     Makefile.am
+           buildconf.sh
+           cmake/expat-config.cmake.in
+           cmake/mingw-toolchain.cmake
+           conftools/get-version.sh
+           doc/Makefile.am
+           examples/Makefile.am
+           examples/elements.c
+           examples/outline.c
+           fix-xmltest-log.sh
+           lib/Makefile.am
+           lib/ascii.h
+           lib/asciitab.h
+           lib/expat.h
+           lib/expat_external.h
+           lib/iasciitab.h
+           lib/internal.h
+           lib/latin1tab.h
+           lib/nametab.h
+           lib/utf8tab.h
+           lib/winconfig.h
+           lib/xmlparse.c
+           lib/xmlrole.c
+           lib/xmlrole.h
+           lib/xmltok.c
+           lib/xmltok.h
+           lib/xmltok_impl.c
+           lib/xmltok_impl.h
+           lib/xmltok_ns.c
+           run.sh.in
+           test-driver-wrapper.sh
+           tests/Makefile.am
+           tests/benchmark/Makefile.am
+           tests/benchmark/benchmark.c
+           tests/chardata.c
+           tests/chardata.h
+           tests/memcheck.c
+           tests/memcheck.h
+           tests/minicheck.c
+           tests/minicheck.h
+           tests/runtests.c
+           tests/runtestspp.cpp
+           tests/structdata.c
+           tests/structdata.h
+           tests/udiffer.py
+           tests/xmltest.sh
+           win32/expat.iss
+           xmlwf/Makefile.am
+           xmlwf/codepage.c
+           xmlwf/codepage.h
+           xmlwf/ct.c
+           xmlwf/filemap.h
+           xmlwf/readfilemap.c
+           xmlwf/unixfilemap.c
+           xmlwf/win32filemap.c
+           xmlwf/xmlfile.c
+           xmlwf/xmlfile.h
+           xmlwf/xmlmime.c
+           xmlwf/xmlmime.h
+           xmlwf/xmlwf.c
+           xmlwf/xmlwf_helpgen.py
+           xmlwf/xmlwf_helpgen.sh
+Copyright: 1997-2000 Thai Open Source Software Center Ltd
+           2000 Clark Cooper <coopercc@users.sourceforge.net>
+           2000-2006 Fred L. Drake, Jr. <fdrake@users.sourceforge.net>
+           2001 Tim Peters <tim.peters@gmail.com>
+           2001-2003 Greg Stein <gstein@users.sourceforge.net>
+           2002-2017 Karl Waclawek <karl@waclawek.net>
+           2005-2009 Steven Solie <steven@solie.ca>
+           2007-2022 Sebastian Pipping <sebastian@pipping.org>
+           2016 Cristian Rodríguez <crrodriguez@opensuse.org>
+           2016 Don Lewis <truckman@apache.org>
+           2016 Ed Schouten <ed@nuxi.nl>
+           2016 Eric Rahm <erahm@mozilla.com>
+           2016 Gaurav <g.gupta@samsung.com>
+           2016 Gilles Espinasse <g.esp@free.fr>
+           2016 Gustavo Grieco <gustavo.grieco@imag.fr>
+           2016 Pascal Cuoq <cuoq@trust-in-soft.com>
+           2016 Thomas Beutlich <tc@tbeu.de>
+           2017 Alexander Bluhm <alexander.bluhm@gmx.net>
+           2017 Benbuck Nason <bnason@netflix.com>
+           2017 Chanho Park <chanho61.park@samsung.com>
+           2017 Franek Korta <fkorta@gmail.com>
+           2017 Hans Wennborg <hans@chromium.org>
+           2017 José Gutiérrez de la Concha <jose@zeroc.com>
+           2017 Kerin Millar <kfm@plushkava.net>
+           2017 Rolf Eike Beer <eike@sf-mail.de>
+           2017 Stephen Groat <stephen@groat.us>
+           2017 Tomasz Kłoczko <kloczek@fedoraproject.org>
+           2017 Viktor Szakats <commit@vsz.me>
+           2017 Václav Slavík <vaclav@slavik.io>
+           2017-2020 Joe Orton <jorton@redhat.com>
+           2017-2022 Rhodri James <rhodri@wildebeest.org.uk>
+           2018 Anton Maklakov <antmak.pub@gmail.com>
+           2018 Benjamin Peterson <benjamin@python.org>
+           2018 KangLin <kl222@126.com>
+           2018 Marco Maggi <marco.maggi-ipsu@poste.it>
+           2018 Mariusz Zaborski <oshogbo@vexillium.org>
+           2018 Yury Gribov <tetra2005@gmail.com>
+           2019 David Loffredo <loffredo@steptools.com>
+           2019 Expat development team
+           2019 Vadim Zeitlin <vadim@zeitlins.org>
+           2019 Zhongyuan Zhou <zhouzhongyuan@huawei.com>
+           2019-2020 Ben Wagner <bungeman@chromium.org>
+           2019-2022 Jeffrey Walton <noloader@gmail.com>
+           2020 Boris Kolpackov <boris@codesynthesis.com>
+           2020 Kleber Tarcísio <klebertarcisio@yahoo.com.br>
+           2020 Tim Gates <tim.gates@iress.com>
+           2021 Dong-hee Na <donghee.na@python.org>
+           2021 Tim Bray <tbray@textuality.com>
+           2022 Jann Horn <jannh@google.com>
+           2022 Johnny Jazeix <jazeix@gmail.com>
+           2022 Martin Ettl <ettl.martin78@googlemail.com>
+           2022 Samanta Navarro <ferivoz@riseup.net>
+           2022 Thijs Schreijer <thijs@thijsschreijer.nl>
+License:   Expat
+ Licensed under the MIT license:
+ .
+ Permission is  hereby granted,  free of charge,  to any  person obtaining
+ a  copy  of  this  software   and  associated  documentation  files  (the
+ "Software"),  to  deal in  the  Software  without restriction,  including
+ without  limitation the  rights  to use,  copy,  modify, merge,  publish,
+ distribute, sublicense, and/or sell copies of the Software, and to permit
+ persons  to whom  the Software  is  furnished to  do so,  subject to  the
+ following conditions:
+ .
+ The above copyright  notice and this permission notice  shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE  SOFTWARE  IS  PROVIDED  "AS  IS",  WITHOUT  WARRANTY  OF  ANY  KIND,
+ EXPRESS  OR IMPLIED,  INCLUDING  BUT  NOT LIMITED  TO  THE WARRANTIES  OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+ NO EVENT SHALL THE AUTHORS OR  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR  OTHER LIABILITY, WHETHER  IN AN  ACTION OF CONTRACT,  TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Files:     AUTHORS
+           CMake.README
+           Changes
+           ConfigureChecks.cmake
+           README.md
+           acinclude.m4
+           cmake/autotools/expat-config-version.cmake.in
+           cmake/autotools/expat-noconfig__linux.cmake.in
+           cmake/autotools/expat-noconfig__macos.cmake.in
+           cmake/autotools/expat-noconfig__windows.cmake.in
+           cmake/autotools/expat-package-init.cmake
+           cmake/autotools/expat.cmake
+           conftools/expat.m4
+           doc/ok.min.css
+           doc/xmlwf.1
+           expat.pc.cmake
+           expat.pc.in
+           expat_config.h
+           expat_config.h.cmake
+           expat_config.h.in
+           lib/libexpat.def.cmake
+           tests/README.txt
+           tests/benchmark/README.txt
+           tests/xmltest.log.expected
+           win32/MANIFEST.txt
+           win32/README.txt
+           win32/build_expat_iss.bat
+           win32/version.rc
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     Makefile.in
+           aclocal.m4
+           configure
+           doc/Makefile.in
+           examples/Makefile.in
+           lib/Makefile.in
+           m4/libtool.m4
+           m4/ltoptions.m4
+           m4/ltsugar.m4
+           m4/ltversion.m4
+           m4/lt~obsolete.m4
+           tests/Makefile.in
+           tests/benchmark/Makefile.in
+           xmlwf/Makefile.in
+Copyright: 1992-2022 Free Software Foundation, Inc.
+License:   __AUTO_PERMISSIVE__
+ Autogenerated files with permissive licenses.
+
+Files:     conftools/ax-append-compile-flags.m4
+           conftools/ax-append-flag.m4
+           conftools/ax-append-link-flags.m4
+           conftools/ax-check-link-flag.m4
+           conftools/ax-require-defined.m4
+           conftools/expatcfg-compiler-supports-visibility.m4
+Copyright: 2008 Guido U. Draheim <guidod@gmx.de>
+           2011 Maarten Bosmans <mkbosmans@gmail.com>
+           2014 Mike Frysinger <vapier@gentoo.org>
+           2018 The Expat Authors.
+License:   PERMISSIVE
+ Copying and distribution of this file, with or without modification, are
+ permitted in any medium without royalty provided the copyright notice
+ and this notice are preserved.  This file is offered as-is, without any
+ warranty.
+
+Files:     conftools/ar-lib
+           conftools/compile
+           conftools/missing
+           conftools/test-driver
+Copyright: 1996-2021 Free Software Foundation, Inc.
+License:   GPL-2.0+ with autoconf exception
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2, or (at your option)
+ any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+Files:     fuzz/xml_parse_fuzzer.c
+           fuzz/xml_parsebuffer_fuzzer.c
+Copyright: 2016 The Android Open Source Project
+License:   Apache-2.0
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ .
+ http://www.apache.org/licenses/LICENSE-2.0
+ .
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ .
+ On Debian systems, the complete text of the Apache License Version 2.0
+  can be found in `/usr/share/common-licenses/Apache-2.0'.
+
+Files:     conftools/config.guess
+           conftools/config.sub
+Copyright: 1992-2022 Free Software Foundation, Inc.
+License:   __NO_LICENSE__
+
+Files:     conftools/install-sh
+Copyright: 1994 X Consortium
+License:   MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+ AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNEC-
+ TION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of the X Consortium shall not
+ be used in advertising or otherwise to promote the sale, use or other deal-
+ ings in this Software without prior written authorization from the X Consor-
+ tium.
+ .
+ FSF changes to this file are in the public domain.
+ .
+ Calling this script install-sh is preferred over install.sh, to prevent
+ 'make' implicit rules from creating a file called install from it
+ when there is no Makefile.
+ .
+ This script is compatible with the BSD install script, but was written
+ from scratch.
+
+Files:     xmlwf/xmltchar.h
+Copyright: 1997-2000 Thai Open Source Software Center Ltd
+           2016-2021 Sebastian Pipping <sebastian@pipping.org>
+           2017 Rhodri James <rhodri@wildebeest.org.uk>
+License:   Expat
+ Licensed under the MIT license:
+ .
+ Permission is  hereby granted,  free of charge,  to any  person obtaining
+ a  copy  of  this  software   and  associated  documentation  files  (the
+ "Software"),  to  deal in  the  Software  without restriction,  including
+ without  limitation the  rights  to use,  copy,  modify, merge,  publish,
+ distribute, sublicense, and/or sell copies of the Software, and to permit
+ persons  to whom  the Software  is  furnished to  do so,  subject to  the
+ following conditions:
+ .
+ The above copyright  notice and this permission notice  shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE  SOFTWARE  IS  PROVIDED  "AS  IS",  WITHOUT  WARRANTY  OF  ANY  KIND,
+ EXPRESS  OR IMPLIED,  INCLUDING  BUT  NOT LIMITED  TO  THE WARRANTIES  OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+ NO EVENT SHALL THE AUTHORS OR  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR  OTHER LIABILITY, WHETHER  IN AN  ACTION OF CONTRACT,  TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Ensures compile-time constants are consistent
+
+Files:     doc/style.css
+Copyright: 2000 Clark Cooper <coopercc@users.sourceforge.net>
+           2000-2004 Fred L. Drake, Jr. <fdrake@users.sourceforge.net>
+           2021 Sebastian Pipping <sebastian@pipping.org>
+License:   Expat
+ Licensed under the MIT license:
+ .
+ Permission is  hereby granted,  free of charge,  to any  person obtaining
+ a  copy  of  this  software   and  associated  documentation  files  (the
+ "Software"),  to  deal in  the  Software  without restriction,  including
+ without  limitation the  rights  to use,  copy,  modify, merge,  publish,
+ distribute, sublicense, and/or sell copies of the Software, and to permit
+ persons  to whom  the Software  is  furnished to  do so,  subject to  the
+ following conditions:
+ .
+ The above copyright  notice and this permission notice  shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE  SOFTWARE  IS  PROVIDED  "AS  IS",  WITHOUT  WARRANTY  OF  ANY  KIND,
+ EXPRESS  OR IMPLIED,  INCLUDING  BUT  NOT LIMITED  TO  THE WARRANTIES  OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+ NO EVENT SHALL THE AUTHORS OR  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR  OTHER LIABILITY, WHETHER  IN AN  ACTION OF CONTRACT,  TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Stop not using half the screen
+
+Files:     configure.ac
+Copyright: 2000 Clark Cooper <coopercc@users.sourceforge.net>
+           2000-2005 Fred L. Drake, Jr. <fdrake@users.sourceforge.net>
+           2001-2003 Greg Stein <gstein@users.sourceforge.net>
+           2006-2012 Karl Waclawek <karl@waclawek.net>
+           2016-2022 Sebastian Pipping <sebastian@pipping.org>
+           2017 S. P. Zeidler <spz@netbsd.org>
+           2017 Stephen Groat <stephen@groat.us>
+           2017-2020 Joe Orton <jorton@redhat.com>
+           2018 Benjamin Peterson <benjamin@python.org>
+           2018 KangLin <kl222@126.com>
+           2018 Marco Maggi <marco.maggi-ipsu@poste.it>
+           2018 Yury Gribov <tetra2005@gmail.com>
+           2019 Kishore Kunche <kishore.kunche@intel.com>
+           2019 Mohammed Khajapasha <mohammed.khajapasha@intel.com>
+           2020 Jeffrey Walton <noloader@gmail.com>
+License:   Expat
+ Licensed under the MIT license:
+ .
+ Permission is  hereby granted,  free of charge,  to any  person obtaining
+ a  copy  of  this  software   and  associated  documentation  files  (the
+ "Software"),  to  deal in  the  Software  without restriction,  including
+ without  limitation the  rights  to use,  copy,  modify, merge,  publish,
+ distribute, sublicense, and/or sell copies of the Software, and to permit
+ persons  to whom  the Software  is  furnished to  do so,  subject to  the
+ following conditions:
+ .
+ The above copyright  notice and this permission notice  shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE  SOFTWARE  IS  PROVIDED  "AS  IS",  WITHOUT  WARRANTY  OF  ANY  KIND,
+ EXPRESS  OR IMPLIED,  INCLUDING  BUT  NOT LIMITED  TO  THE WARRANTIES  OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+ NO EVENT SHALL THE AUTHORS OR  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR  OTHER LIABILITY, WHETHER  IN AN  ACTION OF CONTRACT,  TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Ensure that Expat is configured with autoconf 2.69 or newer.
+
+Files:     lib/siphash.h
+Copyright: __NO_COPYRIGHT__ in: lib/siphash.h
+License:   __UNKNOWN__
+ Licensed under the CC0 Public Domain Dedication license.
+ .
+ 1. https://www.131002.net/siphash/siphash24.c
+ 2. https://www.131002.net/siphash/
+
+Files:     CMakeLists.txt
+Copyright: 2010 Patrick Spendrin <ps_ml@gmx.de>
+           2012 Karl Waclawek <karl@waclawek.net>
+           2016 Ben Boeckel <ben.boeckel@kitware.com>
+           2016 Björn Lindahl <bjorn.lindahl@foi.se>
+           2016 Sergei Nikulov <sergey.nikulov@gmail.com>
+           2016 Tobias Taschner <github@tc84.de>
+           2016-2022 Sebastian Pipping <sebastian@pipping.org>
+           2017 Franek Korta <fkorta@gmail.com>
+           2017 Rhodri James <rhodri@wildebeest.org.uk>
+           2017 Rolf Eike Beer <eike@sf-mail.de>
+           2017 Stephen Groat <stephen@groat.us>
+           2018 Frank Rast <frank.rast@gefeg.com>
+           2018 Yury Gribov <tetra2005@gmail.com>
+           2018 pedro-vicente <pedro.vicente@space-research.org>
+           2018 userwithuid <userwithuid@gmail.com>
+           2019 Bhargava Shastry <bhargava.shastry@ethereum.org>
+           2019 David Loffredo <loffredo@steptools.com>
+           2019 Kishore Kunche <kishore.kunche@intel.com>
+           2019 Mohammed Khajapasha <mohammed.khajapasha@intel.com>
+           2019 xantares <xantares09@hotmail.com>
+           2020 Gulliver <gulliver@traumkristalle.net>
+           2020 Maciej Sroczyński <macieksroczynski@poczta.fm>
+           2020 Thomas Beutlich <tc@tbeu.de>
+           2021 Alex Richardson <Alexander.Richardson@cl.cam.ac.uk>
+           2022 David Faure <david.faure@kdab.com> Unlike most of Expat,
+           2022 Johnny Jazeix <jazeix@gmail.com>
+License:   __UNKNOWN__
+ this file is copyrighted under the BSD-license for buildsystem files of KDE.
+
+Files:     conftools/ltmain.sh
+Copyright: 1996-2022 Free Software Foundation, Inc.
+License:   GPL-2.0+ with libtool exception
+ This is free software; see the source for copying conditions.  There is NO
+ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ .
+ GNU Libtool is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ As a special exception to the GNU General Public License,
+ if you distribute this file as part of a program or library that
+ is built using GNU Libtool, you may include this file under the
+ same distribution terms that you use for the rest of that program.
+ .
+ GNU Libtool is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+Files:     conftools/depcomp
+Copyright: 1999-2021 Free Software Foundation, Inc.
+License:   GPL-2.0+ with autoconf exception
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2, or (at your option)
+ any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+ .
+ Originally written by Alexandre Oliva <oliva@dcc.unicamp.br>.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+Files:     conftools/ax-check-compile-flag.m4
+Copyright: 2008 Guido U. Draheim <guidod@gmx.de>
+           2011 Maarten Bosmans <mkbosmans@gmail.com>
+           2020 Sebastian Pipping <sebastian@pipping.org>
+License:   GPL-3.0+ with unknown exception *** check multiple exceptions ***
+ This program is free software: you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation, either version 3 of the License, or (at your
+ option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+ Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ As a special exception, the respective Autoconf Macro's copyright owner
+ gives unlimited permission to copy, distribute and modify the configure
+ scripts that are the output of Autoconf when processing the Macro. You
+ need not follow the terms of the GNU General Public License when using
+ or distributing such scripts, even though portions of the text of the
+ Macro appear in them. The GNU General Public License (GPL) does govern
+ all other use of the material that constitutes the Autoconf Macro.
+ .
+ This special exception to the GPL applies to versions of the Autoconf
+ Macro released by the Autoconf Archive. When you make and distribute a
+ modified version of the Autoconf Macro, you may extend this special
+ exception to the GPL to apply to your modified version as well.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ Version 3 can be found in `/usr/share/common-licenses/GPL-3'.
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         doc/xmlwf.xml
+#         doc/reference.html
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: COPYING
+ Copyright (c) 1998-2000 Thai Open Source Software Center Ltd and Clark Cooper
+ Copyright (c) 2001-2022 Expat maintainers
+ .
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of this software and associated documentation files (the
+ "Software"), to deal in the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense, and/or sell copies of the Software, and to
+ permit persons to whom the Software is furnished to do so, subject to
+ the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
